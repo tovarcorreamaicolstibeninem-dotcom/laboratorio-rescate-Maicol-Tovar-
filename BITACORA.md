@@ -38,3 +38,15 @@ git log --oneline --graph --all: Muestra el historial resumido en una línea jun
    Creó un commit nuevo que deshace los cambios del commit anterior sin eliminarlo del historial.  
     ¿Por qué es la opción segura cuando ya se hizo push?
      Porque conserva intacto el historial público ya subido a GitHub, evitando conflictos o historiales desincronizados para otras personas que ya hayan descargado los cambios. 
+
+     para el punto 7
+     ¿Qué diferencia hay entre git reset --soft y git revert?
+      git reset --soft retrocede el puntero del commit y borra el commit del historial conservando los cambios en el área de preparación (staging), mientras que git revert mantiene el historial y crea un commit nuevo que deshace los cambios de un commit anterior. 
+        ¿Cuándo se usa cada uno?
+       Usa git reset --soft para deshacer un commit local que aún no has subido (push) y corregir o reagrupar tus cambios; usa git revert para deshacer un commit que ya fue subido a GitHub y así no alterar el historial compartido.  
+
+       para el punto 8
+       ¿Para qué sirve git stash?
+        Guarda temporalmente los cambios locales que aún no están listos para un commit en una pila oculta, dejando el directorio de trabajo limpio para poder cambiar de rama o atender otra tarea urgente.  
+         ¿Qué hace git stash pop?
+         Recupera los últimos cambios guardados en el stash, los vuelve a aplicar sobre tu rama actual y elimina ese respaldo temporal de la lista del stash.
