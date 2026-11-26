@@ -27,3 +27,14 @@ git log --oneline --graph --all: Muestra el historial resumido en una línea jun
 
 ¿Funcionaría si nunca hubieras hecho commit de ese archivo?
  No. Si el archivo nunca fue rastreado ni guardado en un commit previo, Git no tiene ninguna copia de respaldo en su historial de dónde recuperarlo.
+
+ para el punto 4:
+
+¿Qué diferencia hay entre git restore y git restore --staged?
+ git restore <archivo> descarta las modificaciones hechas en el archivo dentro de tu carpeta local (volviéndolo al estado del último commit), mientras que git restore --staged <archivo> únicamente saca el archivo del área de preparación (staging area) sin borrar los cambios que hiciste en tu carpeta.
+
+  para el punto 6
+  ¿git revert borró el commit equivocado o creó uno nuevo?
+   Creó un commit nuevo que deshace los cambios del commit anterior sin eliminarlo del historial.  
+    ¿Por qué es la opción segura cuando ya se hizo push?
+     Porque conserva intacto el historial público ya subido a GitHub, evitando conflictos o historiales desincronizados para otras personas que ya hayan descargado los cambios. 
