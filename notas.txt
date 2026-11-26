@@ -1,4 +1,3 @@
 Línea 1: Git guarda el historial del proyecto.
 Línea 2: me gustan las motos.
 Línea 3: soy amante de la comida.
-Línea 4:  permite corregir el último commit local.
